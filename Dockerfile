@@ -25,6 +25,7 @@ RUN python download_databases.py
 
 ADD instance.cfg antismash/config/instance.cfg
 
-#ENTRYPOINT ["/usr/local/bin/run"]
+ENV PATH /antismash-${ANTISMASH_VERSION}:$PATH
 
+#ENTRYPOINT ["/usr/local/bin/run"]
 CMD ["/bin/bash"]
