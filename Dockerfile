@@ -27,5 +27,5 @@ ADD instance.cfg antismash/config/instance.cfg
 
 ENV PATH /antismash-${ANTISMASH_VERSION}:$PATH
 
-#ENTRYPOINT ["/usr/local/bin/run"]
+ENTRYPOINT ["/bin/bash"]
 CMD ["/bin/bash"]
